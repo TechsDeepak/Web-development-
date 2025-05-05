@@ -1,0 +1,136 @@
+/* General Reset */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header, footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  nav {
+    background-color: #003366;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  
+  .container, .content, .form-container {
+    padding: 20px;
+  }
+  
+  /* Homepage specific */
+  .content {
+    text-align: center;
+  }
+  
+  /* Events Page */
+  h2, h3 {
+    color: #004080;
+  }
+  
+  .category {
+    margin-bottom: 30px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    background-color: #e6f0ff;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 5px solid #004080;
+  }
+  
+  /* Registration Page */
+  .form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003060;
+  }
+
+  /* Flexbox event row */
+.event-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Event cards styling */
+  .event {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+  }
+  
+  .event img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 1024px) {
+    .event {
+      width: 45%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .event {
+      width: 100%;
+    }
+  
+    .event-row {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
